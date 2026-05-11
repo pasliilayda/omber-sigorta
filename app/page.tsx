@@ -400,7 +400,11 @@ export default function Page() {
               <h3 className="mt-6 font-black">{title}</h3>
               <p className="mt-3 text-sm leading-6 text-[#566273]">{desc}</p>
               <a
-                href="#form"
+                href={
+                  title === "Kasko" || title === "Comprehensive Cover"
+                    ? "/kasko"
+                    : "#form"
+                }
                 className="mt-6 inline-block text-sm font-extrabold"
               >
                 {lang === "tr" ? "Detaylı Bilgi →" : "More Details →"}
