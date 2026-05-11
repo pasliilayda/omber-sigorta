@@ -431,7 +431,94 @@ export default function Page() {
           ))}
         </div>
       </section>
+      <section className="bg-[#f7f8fb] px-4 py-16 sm:px-6 md:px-14 md:py-20">
+        <div className="mx-auto max-w-7xl">
+          <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
+            <div>
+              <p className="text-sm font-extrabold tracking-[0.24em] text-[#c48725]">
+                {lang === "tr" ? "REHBERLER" : "GUIDES"}
+              </p>
 
+              <h2 className="mt-4 text-3xl font-black sm:text-4xl">
+                {lang === "tr"
+                  ? "Sigorta Hakkında Bilmeniz Gerekenler"
+                  : "What You Need To Know About Insurance"}
+              </h2>
+
+              <p className="mt-5 max-w-2xl leading-8 text-[#566273]">
+                {lang === "tr"
+                  ? "KKTC trafik sigortası, kasko, navlun ve sağlık sigortası hakkında rehber içerikler."
+                  : "Guides about motor insurance, comprehensive cover, cargo and health insurance in Northern Cyprus."}
+              </p>
+            </div>
+
+            <a
+              href="/blog"
+              className="rounded-full bg-[#071f3d] px-7 py-4 text-sm font-extrabold text-white shadow-lg transition hover:bg-[#123862]"
+            >
+              {lang === "tr" ? "Tüm Rehberler →" : "All Guides →"}
+            </a>
+          </div>
+
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            {[
+              {
+                title:
+                  lang === "tr"
+                    ? "KKTC’de Kasko Zorunlu mu?"
+                    : "Is Comprehensive Cover Mandatory in Northern Cyprus?",
+                desc:
+                  lang === "tr"
+                    ? "Kasko ile trafik sigortası arasındaki farkları öğrenin."
+                    : "Learn the differences between comprehensive cover and motor insurance.",
+                href: "/blog/kktc-kasko-zorunlu-mu",
+              },
+              {
+                title:
+                  lang === "tr"
+                    ? "Navlun Sigortası Nedir?"
+                    : "What is Cargo Insurance?",
+                desc:
+                  lang === "tr"
+                    ? "Taşınan yüklerinizi güvence altına alan sigorta sistemi."
+                    : "Insurance solutions protecting transported goods.",
+                href: "/blog/navlun-sigortasi-nedir",
+              },
+              {
+                title:
+                  lang === "tr"
+                    ? "Trafik Sigortası Neleri Karşılar?"
+                    : "What Does Motor Insurance Cover?",
+                desc:
+                  lang === "tr"
+                    ? "Zorunlu trafik sigortasının kapsamını keşfedin."
+                    : "Discover the scope of compulsory motor insurance.",
+                href: "/blog/trafik-sigortasi-neleri-karsilar",
+              },
+            ].map((post) => (
+              <a
+                key={post.href}
+                href={post.href}
+                className="rounded-[2rem] border border-[#e6ebf1] bg-white p-7 shadow-sm transition hover:-translate-y-2 hover:shadow-xl"
+              >
+                <div className="inline-flex rounded-full bg-[#fff4df] px-4 py-2 text-xs font-black text-[#c48725]">
+                  {lang === "tr" ? "REHBER" : "GUIDE"}
+                </div>
+
+                <h3 className="mt-6 text-2xl font-black leading-tight">
+                  {post.title}
+                </h3>
+
+                <p className="mt-4 leading-7 text-[#566273]">{post.desc}</p>
+
+                <p className="mt-7 font-black text-[#071f3d]">
+                  {lang === "tr" ? "Devamını Oku →" : "Read More →"}
+                </p>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
       <section
         id="about"
         className="bg-[#f7f8fb] px-4 py-16 sm:px-6 md:px-14 md:py-20"
