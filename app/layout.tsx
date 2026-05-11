@@ -17,7 +17,7 @@ export const metadata = {
   description:
     "Omber Sigorta; KKTC’de trafik sigortası, kasko, konut, sağlık, seyahat, iş yeri ve navlun sigortası alanlarında hızlı ve güvenilir sigorta danışmanlığı sunar.",
   icons: {
-    icon: "/favicon.png",
+    icon: "/favi.ico",
   },
 };
 
