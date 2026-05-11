@@ -489,7 +489,7 @@ export default function Page() {
                   lang === "tr"
                     ? "Kaza sonrası sürücülerin yaptığı kritik hataları öğrenin."
                     : "Learn the most common mistakes drivers make after accidents.",
-                href: "/blog/arac-kazalarinda-en-cok-yapilan-5-hata",
+                href: "/blog/arac-kazalarinda-en-cok-yapilan-hatalar",
               },
               {
                 title:
