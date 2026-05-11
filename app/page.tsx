@@ -258,6 +258,9 @@ export default function Page() {
           <a href="#services">{t.nav[1]}</a>
           <a href="#about">{t.nav[2]}</a>
           <a href="#faq">{t.nav[3]}</a>
+
+          <a href="/blog">{lang === "tr" ? "Rehberler" : "Guides"}</a>
+
           <a href="#form">{t.nav[4]}</a>
         </div>
 
