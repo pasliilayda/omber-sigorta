@@ -403,7 +403,25 @@ export default function Page() {
                 href={
                   title === "Kasko" || title === "Comprehensive Cover"
                     ? "/kasko"
-                    : "#form"
+                    : title === "Trafik Sigortası" ||
+                        title === "Motor Insurance"
+                      ? "/trafik-sigortasi"
+                      : title === "Navlun Sigortası" ||
+                          title === "Cargo Insurance"
+                        ? "/navlun-sigortasi"
+                        : title === "Konut Sigortası" ||
+                            title === "Home Insurance"
+                          ? "/konut-sigortasi"
+                          : title === "Sağlık Sigortası" ||
+                              title === "Health Insurance"
+                            ? "/saglik-sigortasi"
+                            : title === "Seyahat Sigortası" ||
+                                title === "Travel Insurance"
+                              ? "/seyahat-sigortasi"
+                              : title === "İşyeri Sigortası" ||
+                                  title === "Business Insurance"
+                                ? "/isyeri-sigortasi"
+                                : "#form"
                 }
                 className="mt-6 inline-block text-sm font-extrabold"
               >
