@@ -483,24 +483,24 @@ export default function Page() {
               {
                 title:
                   lang === "tr"
-                    ? "Navlun Sigortası Nedir?"
-                    : "What is Cargo Insurance?",
+                    ? "Araç Kazalarında En Çok Yapılan 5 Hata"
+                    : "Top 5 Mistakes After Car Accidents",
                 desc:
                   lang === "tr"
-                    ? "Taşınan yüklerinizi güvence altına alan sigorta sistemi."
-                    : "Insurance solutions protecting transported goods.",
-                href: "/blog/navlun-sigortasi-nedir",
+                    ? "Kaza sonrası sürücülerin yaptığı kritik hataları öğrenin."
+                    : "Learn the most common mistakes drivers make after accidents.",
+                href: "/blog/arac-kazalarinda-en-cok-yapilan-5-hata",
               },
               {
                 title:
                   lang === "tr"
-                    ? "Trafik Sigortası Neleri Karşılar?"
-                    : "What Does Motor Insurance Cover?",
+                    ? "KKTC’de Sigorta Seçerken Nelere Dikkat Etmelisiniz?"
+                    : "What Should You Consider When Choosing Insurance in Cyprus?",
                 desc:
                   lang === "tr"
-                    ? "Zorunlu trafik sigortasının kapsamını keşfedin."
-                    : "Discover the scope of compulsory motor insurance.",
-                href: "/blog/trafik-sigortasi-neleri-karsilar",
+                    ? "Doğru sigorta poliçesini seçerken dikkat edilmesi gerekenler."
+                    : "Things to consider when choosing the right insurance policy.",
+                href: "/blog/kktc-sigorta-secerken-nelere-dikkat-edilmeli",
               },
             ].map((post) => (
               <a
