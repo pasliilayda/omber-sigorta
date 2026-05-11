@@ -40,7 +40,7 @@ const posts = [
     category: "Konut",
     title: "Konut Sigortası Gerçekten Gerekli mi?",
     desc: "Ev sahipleri ve kiracılar için konut sigortasının önemi.",
-    href: "/blog/konut-sigortasi-gerekli-mi",
+    href: "/blog/konut-sigortasi-gerekli -mi",
     read: "4 dk",
   },
   {
