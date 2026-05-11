@@ -304,6 +304,9 @@ export default function Page() {
             <a onClick={closeMenu} href="#faq">
               {t.nav[3]}
             </a>
+            <a onClick={closeMenu} href="/blog">
+              {lang === "tr" ? "Rehberler" : "Guides"}
+            </a>
             <a onClick={closeMenu} href="#form">
               {t.nav[4]}
             </a>
